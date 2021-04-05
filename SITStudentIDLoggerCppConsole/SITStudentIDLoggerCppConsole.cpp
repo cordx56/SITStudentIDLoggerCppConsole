@@ -6,7 +6,7 @@
 int main(int argc, char* argv[])
 {
     std::cout << "SIT Student ID Logger C++ Console" << std::endl;
-    std::cout << "Copyright 2021 cordx56" << std::endl;
+    std::cout << "Copyright (c) 2021 cordx56" << std::endl;
 
     std::string filename = "ids.txt";
     if (1 < argc) {
