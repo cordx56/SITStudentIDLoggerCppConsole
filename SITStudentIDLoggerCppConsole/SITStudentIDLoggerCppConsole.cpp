@@ -30,7 +30,8 @@ int main(int argc, char* argv[])
             continue;
             //exit(1);
         }
-        uint8 data[16];
+        uint8 data[17];
+        data[16] = 0;
         if (felica_read_without_encryption02(f, 0x010b, 0, 0, data) == 0) {
             std::string datastring = (char*)data;
             std::string student_id = datastring.substr(3, 7);
